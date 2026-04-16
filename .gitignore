@@ -1,6 +1,5 @@
 # Visual Studio 2015 user specific files
 .vs/
-.vsconfig
 
 # Compiled Object files
 *.slo
@@ -74,11 +73,6 @@ Plugins/**/Intermediate/*
 # Cache files for the editor to use
 DerivedDataCache/*
 
-# Extra ignores
-Backup/*
-.vsconfig
-*.sln
-
 AGD/Content/LevelPrototyping/
 AGD/Content/__ExternalActors__/
 AGD/Content/__ExternalObjects__/
@@ -88,3 +82,4 @@ AGD/Content/ThirdPerson/MI_ThirdPersonColWay.uasset
 AGD/Content/Collections/
 AGD/Content/Developers/
 AGD/Content/Input/
+
