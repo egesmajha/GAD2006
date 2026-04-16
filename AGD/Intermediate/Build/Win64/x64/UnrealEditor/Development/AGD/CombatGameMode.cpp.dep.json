@@ -1,0 +1,19 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\pc\\documents\\unreal projects\\agd\\source\\agd\\variant_combat\\combatgamemode.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\pc\\documents\\unreal projects\\agd\\intermediate\\build\\win64\\x64\\agdeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\pc\\documents\\unreal projects\\agd\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\agd\\definitions.agd.h",
+            "c:\\users\\pc\\documents\\unreal projects\\agd\\source\\agd\\variant_combat\\combatgamemode.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\serverstatreplicator.generated.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gamemodebase.generated.h",
+            "c:\\users\\pc\\documents\\unreal projects\\agd\\intermediate\\build\\win64\\unrealeditor\\inc\\agd\\uht\\combatgamemode.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

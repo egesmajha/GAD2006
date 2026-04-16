@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\.vsconfig" />
+    <None Include="..\..\AGD.uproject" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\AGD.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\AGDEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Source\AGD">
+      <UniqueIdentifier>{2CCA1232-4CFD-33E2-878C-697BFFF55BFC}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\AGD\AGD.Build.cs">
+      <Filter>Source\AGD</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\AGD\AGD.cpp">
+      <Filter>Source\AGD</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AGD\AGD.h">
+      <Filter>Source\AGD</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AGD\AGDCharacter.cpp">
+      <Filter>Source\AGD</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AGD\AGDCharacter.h">
+      <Filter>Source\AGD</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AGD\AGDGameMode.cpp">
+      <Filter>Source\AGD</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AGD\AGDGameMode.h">
+      <Filter>Source\AGD</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AGD\AGDPlayerController.cpp">
+      <Filter>Source\AGD</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AGD\AGDPlayerController.h">
+      <Filter>Source\AGD</Filter>
+    </ClInclude>
+    <Filter Include="Source\AGD\Private">
+      <UniqueIdentifier>{2567F9C4-1991-3446-87DE-F618A0552E9F}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\AGD\Private\COAAvatar.cpp">
+      <Filter>Source\AGD\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\AGD\Private\COABaseCharacter.cpp">
+      <Filter>Source\AGD\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\AGD\Private\COAGameModeBase.cpp">
+      <Filter>Source\AGD\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\AGD\Public">
+      <UniqueIdentifier>{F3F09D90-75F5-3EDE-A31B-C77362C210DC}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\AGD\Public\COAAvatar.h">
+      <Filter>Source\AGD\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\AGD\Public\COABaseCharacter.h">
+      <Filter>Source\AGD\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\AGD\Public\COAGameModeBase.h">
+      <Filter>Source\AGD\Public</Filter>
+    </ClInclude>
+    <Filter Include="Source\AGD\Variant_Combat">
+      <UniqueIdentifier>{01A87C24-33DE-39E0-A934-EC54622A7BEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\AGD\Variant_Combat\AI">
+      <UniqueIdentifier>{B34F05FD-C376-3C91-8076-442447C8257E}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\AGD\Variant_Combat\AI\CombatAIController.cpp">
+      <Filter>Source\AGD\Variant_Combat\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AGD\Variant_Combat\AI\CombatAIController.h">
+      <Filter>Source\AGD\Variant_Combat\AI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AGD\Variant_Combat\AI\CombatEnemy.cpp">
+      <Filter>Source\AGD\Variant_Combat\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AGD\Variant_Combat\AI\CombatEnemy.h">
+      <Filter>Source\AGD\Variant_Combat\AI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AGD\Variant_Combat\AI\CombatEnemySpawner.cpp">
+      <Filter>Source\AGD\Variant_Combat\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AGD\Variant_Combat\AI\CombatEnemySpawner.h">
+      <Filter>Source\AGD\Variant_Combat\AI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AGD\Variant_Combat\AI\CombatStateTreeUtility.cpp">
+      <Filter>Source\AGD\Variant_Combat\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AGD\Variant_Combat\AI\CombatStateTreeUtility.h">
+      <Filter>Source\AGD\Variant_Combat\AI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AGD\Variant_Combat\AI\EnvQueryContext_Danger.cpp">
+      <Filter>Source\AGD\Variant_Combat\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AGD\Variant_Combat\AI\EnvQueryContext_Danger.h">
+      <Filter>Source\AGD\Variant_Combat\AI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AGD\Variant_Combat\AI\EnvQueryContext_Player.cpp">
+      <Filter>Source\AGD\Variant_Combat\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AGD\Variant_Combat\AI\EnvQueryContext_Player.h">
+      <Filter>Source\AGD\Variant_Combat\AI</Filter>
+    </ClInclude>
+    <Filter Include="Source\AGD\Variant_Combat\Animation">
+      <UniqueIdentifier>{CFC362E9-C44B-3BD9-9C15-7BCBA6F22813}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\AGD\Variant_Combat\Animation\AnimNotify_CheckChargedAttack.cpp">
+      <Filter>Source\AGD\Variant_Combat\Animation</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AGD\Variant_Combat\Animation\AnimNotify_CheckChargedAttack.h">
+      <Filter>Source\AGD\Variant_Combat\Animation</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AGD\Variant_Combat\Animation\AnimNotify_CheckCombo.cpp">
+      <Filter>Source\AGD\Variant_Combat\Animation</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AGD\Variant_Combat\Animation\AnimNotify_CheckCombo.h">
+      <Filter>Source\AGD\Variant_Combat\Animation</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AGD\Variant_Combat\Animation\AnimNotify_DoAttackTrace.cpp">
+      <Filter>Source\AGD\Variant_Combat\Animation</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AGD\Variant_Combat\Animation\AnimNotify_DoAttackTrace.h">
+      <Filter>Source\AGD\Variant_Combat\Animation</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AGD\Variant_Combat\CombatCharacter.cpp">
+      <Filter>Source\AGD\Variant_Combat</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AGD\Variant_Combat\CombatCharacter.h">
+      <Filter>Source\AGD\Variant_Combat</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AGD\Variant_Combat\CombatGameMode.cpp">
+      <Filter>Source\AGD\Variant_Combat</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AGD\Variant_Combat\CombatGameMode.h">
+      <Filter>Source\AGD\Variant_Combat</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AGD\Variant_Combat\CombatPlayerController.cpp">
+      <Filter>Source\AGD\Variant_Combat</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AGD\Variant_Combat\CombatPlayerController.h">
+      <Filter>Source\AGD\Variant_Combat</Filter>
+    </ClInclude>
+    <Filter Include="Source\AGD\Variant_Combat\Gameplay">
+      <UniqueIdentifier>{7F112120-C66C-34F7-B7B8-9E09841E3FD4}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\AGD\Variant_Combat\Gameplay\CombatActivationVolume.cpp">
+      <Filter>Source\AGD\Variant_Combat\Gameplay</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AGD\Variant_Combat\Gameplay\CombatActivationVolume.h">
+      <Filter>Source\AGD\Variant_Combat\Gameplay</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AGD\Variant_Combat\Gameplay\CombatCheckpointVolume.cpp">
+      <Filter>Source\AGD\Variant_Combat\Gameplay</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AGD\Variant_Combat\Gameplay\CombatCheckpointVolume.h">
+      <Filter>Source\AGD\Variant_Combat\Gameplay</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AGD\Variant_Combat\Gameplay\CombatDamageableBox.cpp">
+      <Filter>Source\AGD\Variant_Combat\Gameplay</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AGD\Variant_Combat\Gameplay\CombatDamageableBox.h">
+      <Filter>Source\AGD\Variant_Combat\Gameplay</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AGD\Variant_Combat\Gameplay\CombatDummy.cpp">
+      <Filter>Source\AGD\Variant_Combat\Gameplay</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AGD\Variant_Combat\Gameplay\CombatDummy.h">
+      <Filter>Source\AGD\Variant_Combat\Gameplay</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AGD\Variant_Combat\Gameplay\CombatLavaFloor.cpp">
+      <Filter>Source\AGD\Variant_Combat\Gameplay</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AGD\Variant_Combat\Gameplay\CombatLavaFloor.h">
+      <Filter>Source\AGD\Variant_Combat\Gameplay</Filter>
+    </ClInclude>
+    <Filter Include="Source\AGD\Variant_Combat\Interfaces">
+      <UniqueIdentifier>{98DF3919-99BE-39F7-85C3-70E3783775F1}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\AGD\Variant_Combat\Interfaces\CombatActivatable.cpp">
+      <Filter>Source\AGD\Variant_Combat\Interfaces</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AGD\Variant_Combat\Interfaces\CombatActivatable.h">
+      <Filter>Source\AGD\Variant_Combat\Interfaces</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AGD\Variant_Combat\Interfaces\CombatAttacker.cpp">
+      <Filter>Source\AGD\Variant_Combat\Interfaces</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AGD\Variant_Combat\Interfaces\CombatAttacker.h">
+      <Filter>Source\AGD\Variant_Combat\Interfaces</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AGD\Variant_Combat\Interfaces\CombatDamageable.cpp">
+      <Filter>Source\AGD\Variant_Combat\Interfaces</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AGD\Variant_Combat\Interfaces\CombatDamageable.h">
+      <Filter>Source\AGD\Variant_Combat\Interfaces</Filter>
+    </ClInclude>
+    <Filter Include="Source\AGD\Variant_Combat\UI">
+      <UniqueIdentifier>{3D959550-443A-3D57-BFD8-8F2E7F854380}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\AGD\Variant_Combat\UI\CombatLifeBar.cpp">
+      <Filter>Source\AGD\Variant_Combat\UI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AGD\Variant_Combat\UI\CombatLifeBar.h">
+      <Filter>Source\AGD\Variant_Combat\UI</Filter>
+    </ClInclude>
+    <Filter Include="Source\AGD\Variant_Platforming">
+      <UniqueIdentifier>{6C6874C1-8F44-33EF-A912-07928E92E577}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\AGD\Variant_Platforming\Animation">
+      <UniqueIdentifier>{6F8E9D24-6CFC-3B06-9FFB-D846ED4D7F2B}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\AGD\Variant_Platforming\Animation\AnimNotify_EndDash.cpp">
+      <Filter>Source\AGD\Variant_Platforming\Animation</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AGD\Variant_Platforming\Animation\AnimNotify_EndDash.h">
+      <Filter>Source\AGD\Variant_Platforming\Animation</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AGD\Variant_Platforming\PlatformingCharacter.cpp">
+      <Filter>Source\AGD\Variant_Platforming</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AGD\Variant_Platforming\PlatformingCharacter.h">
+      <Filter>Source\AGD\Variant_Platforming</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AGD\Variant_Platforming\PlatformingGameMode.cpp">
+      <Filter>Source\AGD\Variant_Platforming</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AGD\Variant_Platforming\PlatformingGameMode.h">
+      <Filter>Source\AGD\Variant_Platforming</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AGD\Variant_Platforming\PlatformingPlayerController.cpp">
+      <Filter>Source\AGD\Variant_Platforming</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AGD\Variant_Platforming\PlatformingPlayerController.h">
+      <Filter>Source\AGD\Variant_Platforming</Filter>
+    </ClInclude>
+    <Filter Include="Source\AGD\Variant_SideScrolling">
+      <UniqueIdentifier>{DDE229E8-B00E-37BC-935D-C7CBFEBBA436}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\AGD\Variant_SideScrolling\AI">
+      <UniqueIdentifier>{94093B85-E7E9-314F-8A9B-74429B13DE3B}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\AGD\Variant_SideScrolling\AI\SideScrollingAIController.cpp">
+      <Filter>Source\AGD\Variant_SideScrolling\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AGD\Variant_SideScrolling\AI\SideScrollingAIController.h">
+      <Filter>Source\AGD\Variant_SideScrolling\AI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AGD\Variant_SideScrolling\AI\SideScrollingNPC.cpp">
+      <Filter>Source\AGD\Variant_SideScrolling\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AGD\Variant_SideScrolling\AI\SideScrollingNPC.h">
+      <Filter>Source\AGD\Variant_SideScrolling\AI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AGD\Variant_SideScrolling\AI\SideScrollingStateTreeUtility.cpp">
+      <Filter>Source\AGD\Variant_SideScrolling\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AGD\Variant_SideScrolling\AI\SideScrollingStateTreeUtility.h">
+      <Filter>Source\AGD\Variant_SideScrolling\AI</Filter>
+    </ClInclude>
+    <Filter Include="Source\AGD\Variant_SideScrolling\Gameplay">
+      <UniqueIdentifier>{CEB69876-769E-373C-ABED-43D57613D5AF}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\AGD\Variant_SideScrolling\Gameplay\SideScrollingJumpPad.cpp">
+      <Filter>Source\AGD\Variant_SideScrolling\Gameplay</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AGD\Variant_SideScrolling\Gameplay\SideScrollingJumpPad.h">
+      <Filter>Source\AGD\Variant_SideScrolling\Gameplay</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AGD\Variant_SideScrolling\Gameplay\SideScrollingMovingPlatform.cpp">
+      <Filter>Source\AGD\Variant_SideScrolling\Gameplay</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AGD\Variant_SideScrolling\Gameplay\SideScrollingMovingPlatform.h">
+      <Filter>Source\AGD\Variant_SideScrolling\Gameplay</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AGD\Variant_SideScrolling\Gameplay\SideScrollingPickup.cpp">
+      <Filter>Source\AGD\Variant_SideScrolling\Gameplay</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AGD\Variant_SideScrolling\Gameplay\SideScrollingPickup.h">
+      <Filter>Source\AGD\Variant_SideScrolling\Gameplay</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AGD\Variant_SideScrolling\Gameplay\SideScrollingSoftPlatform.cpp">
+      <Filter>Source\AGD\Variant_SideScrolling\Gameplay</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AGD\Variant_SideScrolling\Gameplay\SideScrollingSoftPlatform.h">
+      <Filter>Source\AGD\Variant_SideScrolling\Gameplay</Filter>
+    </ClInclude>
+    <Filter Include="Source\AGD\Variant_SideScrolling\Interfaces">
+      <UniqueIdentifier>{8F5AC123-5852-36EC-8687-92C87C69F02D}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\AGD\Variant_SideScrolling\Interfaces\SideScrollingInteractable.cpp">
+      <Filter>Source\AGD\Variant_SideScrolling\Interfaces</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AGD\Variant_SideScrolling\Interfaces\SideScrollingInteractable.h">
+      <Filter>Source\AGD\Variant_SideScrolling\Interfaces</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AGD\Variant_SideScrolling\SideScrollingCameraManager.cpp">
+      <Filter>Source\AGD\Variant_SideScrolling</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AGD\Variant_SideScrolling\SideScrollingCameraManager.h">
+      <Filter>Source\AGD\Variant_SideScrolling</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AGD\Variant_SideScrolling\SideScrollingCharacter.cpp">
+      <Filter>Source\AGD\Variant_SideScrolling</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AGD\Variant_SideScrolling\SideScrollingCharacter.h">
+      <Filter>Source\AGD\Variant_SideScrolling</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AGD\Variant_SideScrolling\SideScrollingGameMode.cpp">
+      <Filter>Source\AGD\Variant_SideScrolling</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AGD\Variant_SideScrolling\SideScrollingGameMode.h">
+      <Filter>Source\AGD\Variant_SideScrolling</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\AGD\Variant_SideScrolling\SideScrollingPlayerController.cpp">
+      <Filter>Source\AGD\Variant_SideScrolling</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AGD\Variant_SideScrolling\SideScrollingPlayerController.h">
+      <Filter>Source\AGD\Variant_SideScrolling</Filter>
+    </ClInclude>
+    <Filter Include="Source\AGD\Variant_SideScrolling\UI">
+      <UniqueIdentifier>{1D876D67-68C8-32F5-954B-94C70FBDC14F}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\AGD\Variant_SideScrolling\UI\SideScrollingUI.cpp">
+      <Filter>Source\AGD\Variant_SideScrolling\UI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\AGD\Variant_SideScrolling\UI\SideScrollingUI.h">
+      <Filter>Source\AGD\Variant_SideScrolling\UI</Filter>
+    </ClInclude>
+    <None Include="..\..\UpgradeLog.htm" />
+  </ItemGroup>
+</Project>

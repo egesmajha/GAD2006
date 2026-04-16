@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "AGD",
+			"Path": "..\\Source\\AGD.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "AGDEditor",
+			"Path": "..\\Source\\AGDEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
