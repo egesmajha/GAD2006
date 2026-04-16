@@ -72,3 +72,14 @@ Plugins/**/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+
+AGD/Content/LevelPrototyping/
+AGD/Content/__ExternalActors__/
+AGD/Content/__ExternalObjects__/
+AGD/Content/Characters/
+AGD/Content/ThirdPerson/Lvl_ThirdPerson.umap
+AGD/Content/ThirdPerson/MI_ThirdPersonColWay.uasset
+AGD/Content/Collections/
+AGD/Content/Developers/
+AGD/Content/Input/
+
