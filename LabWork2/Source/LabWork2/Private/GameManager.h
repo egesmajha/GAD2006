@@ -6,6 +6,7 @@
 #include "GameFramework/Actor.h"
 #include "GameGrid.h"
 #include "UnitBase.h"
+#include "Commands/MoveCommand.h"
 #include "GameManager.generated.h"
 
 USTRUCT(BlueprintType)
@@ -55,6 +56,8 @@ public:
 
 private:
 	AUnitBase* ThePlayer;
+	TArray<TSharedRef<Command>> CommandPool;
+	TSharedPtr<Command>  CurrentCommand;
 
 protected:
 	// Called when the game starts or when spawned

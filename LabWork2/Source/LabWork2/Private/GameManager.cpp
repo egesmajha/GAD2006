@@ -4,6 +4,7 @@
 #include "GameManager.h"
 #include "TBPlayerController.h"
 
+
 // Sets default values
 AGameManager::AGameManager()
 {
@@ -50,9 +51,33 @@ void AGameManager::CreateLevelActors(FSLevelInfo Info)
 void AGameManager::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+	if(CurrentCommand.IsValid())
+	{
+		CurrentCommand->Update(DeltaTime);
+	}
 
 }
 void AGameManager::OnActorClicked(AActor* Actor, FKey button)
 {
-	
+	if(CurrentCommand.IsValid() && CurrentCommand->IsExecuting())
+	{
+		return;
+	}
+	AGameSlot* Slot = Cast<AGameSlot>(Actor);
+
+	if (!Slot) return;
+
+	if(!ThePlayer)
+		{
+
+		return;
+	}
+
+	if (Slot->Unit == nullptr)
+	{
+		TSharedRef<MoveCommand> Cmd = 
+			MakeShared<MoveCommand>(ThePlayer->Slot->GridPosition, Slot->GridPosition);
+		Cmd->Execute();
+		CurrentCommand = Cmd;
+	}
 }
