@@ -58,7 +58,7 @@ public:
 	void SpawnUnitHere(TSubclassOf<AUnitBase> UnitClass);
 private:
 	UFUNCTION()
-	void OnGridClicked(AActor* ThouchedActor, FKey ButtonPress);
+	void OnGridClicked(AActor* TouchedActor, FKey ButtonPressed);
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;

@@ -70,11 +70,11 @@ void AGameSlot::SpawnUnitHere(TSubclassOf<AUnitBase> UnitClass)
 	}
 }
 
-void AGameSlot::OnGridClicked(AActor* ThouchedActor, FKey ButtonPress)
+void AGameSlot::OnGridClicked(AActor* TouchedActor, FKey ButtonPressed)
 {
 	if(auto PlayerController = GetWorld()->GetFirstPlayerController<ATBPlayerController>())
 	{
-		PlayerController->OnActorClicked(this, ButtonPress);
+		PlayerController->OnActorClicked(this, ButtonPressed);
 	}
 }
 

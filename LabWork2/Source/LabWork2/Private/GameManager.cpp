@@ -52,4 +52,7 @@ void AGameManager::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 
 }
-
+void AGameManager::OnActorClicked(AActor* Actor, FKey button)
+{
+	
+}

@@ -27,6 +27,7 @@ public:
 	AGameSlot* Slot;
 	
 
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
