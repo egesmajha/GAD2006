@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "Components/BoxComponent.h"
+#include "UnitBase.h"
 #include "GameSlot.generated.h"
 
 
@@ -50,6 +51,10 @@ public:
 
 	UPROPERTY(EditAnywhere)
 	UStaticMeshComponent*Plane;
+
+	UPROPERTY(VisibleAnywhere)
+	AUnitBase* Unit;
+
 	
 
 protected:
