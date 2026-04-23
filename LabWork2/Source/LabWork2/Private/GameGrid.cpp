@@ -2,15 +2,21 @@
 
 
 #include "GameGrid.h"
+#include "Components/ChildActorComponent.h"
+
+AGameGrid* AGameGrid::GameGrid = nullptr;
+
 
 // Sets default values
 AGameGrid::AGameGrid()
+	: NumRows(8), NumCols(8)
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
 	RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("Root"));
 
+	GameGrid = this;
 }
 
 void AGameGrid::OnConstruction(const FTransform& Transform)
@@ -83,5 +89,24 @@ void AGameGrid::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+}
+
+AGameSlot* AGameGrid::GetSlot(FSGridPosition& Position)
+{
+	int GridIndex = Position.Row * NumCols + Position.Col;
+	if(GridActors.IsValidIndex(GridIndex))
+	{
+		return Cast<AGameSlot>(GridActors[GridIndex]->GetChildActor());
+	}
+	return nullptr;
+}
+
+AGameSlot* AGameGrid::FindSlot(FSGridPosition& Position)
+{
+	if(GameGrid) {
+		return GameGrid->GetSlot(Position);
+	}
+
+	return nullptr;
 }
 

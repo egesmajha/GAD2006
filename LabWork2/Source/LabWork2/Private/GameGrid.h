@@ -37,4 +37,10 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	AGameSlot* GetSlot(FSGridPosition& Position);
+	static AGameSlot* FindSlot(FSGridPosition& Position);
+
+private:
+	static AGameGrid* GameGrid;
+
 };
