@@ -27,7 +27,7 @@ public:
 	int NumCols;
 
 	UPROPERTY(VisibleAnywhere)
-	TArray<UChildActorComponent*> GridSlots;
+	TArray<UChildActorComponent*> GridActors;
 
 protected:
 	// Called when the game starts or when spawned

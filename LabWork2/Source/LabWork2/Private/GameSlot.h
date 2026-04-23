@@ -4,7 +4,31 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "Components/BoxComponent.h"
 #include "GameSlot.generated.h"
+
+
+USTRUCT(Blueprintable)
+struct FSGridPosition
+{
+
+	GENERATED_USTRUCT_BODY()
+
+	FSGridPosition(){}
+	FSGridPosition(int col, int row) : Col(col), Row(row) {}
+
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+	uint8 Col;
+
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+	uint8 Row;
+}
+
+UENUM(Blueprintable)
+enum EGridState
+{
+	GS_Default, GS_Highlighted, GS_Offensive, GS_Supportive,
+};
 
 UCLASS()
 class AGameSlot : public AActor
@@ -14,6 +38,19 @@ class AGameSlot : public AActor
 public:	
 	// Sets default values for this actor's properties
 	AGameSlot();
+
+	EGridState GridState;
+	FSGridPosition GridPosition;
+
+	UFUNCTION()
+	void SetState(EGridState NewState);
+
+	UPROPERTY(EditAnywhere)
+	UBoxComponent* Box;
+
+	UPROPERTY(EditAnywhere)
+	UStaticMeshComponent*Plane;
+	
 
 protected:
 	// Called when the game starts or when spawned

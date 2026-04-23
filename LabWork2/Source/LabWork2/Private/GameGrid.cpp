@@ -9,6 +9,17 @@ AGameGrid::AGameGrid()
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
+	RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("Root"));
+
+}
+
+void AGameGrid::OnConstruction(const FTransform& Transform)
+{
+	Super::OnConstruction(Transform);
+ for (auto Grid: GridActors)
+ {
+	 Grid->DestroyComponent();
+ }
 }
 
 // Called when the game starts or when spawned
