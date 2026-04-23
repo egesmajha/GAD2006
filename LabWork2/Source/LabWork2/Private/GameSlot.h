@@ -55,7 +55,7 @@ public:
 	UPROPERTY(VisibleAnywhere)
 	AUnitBase* Unit;
 
-	
+	void SpawnUnitHere(TSubclassOf<AUnitBase> UnitClass);
 
 protected:
 	// Called when the game starts or when spawned
