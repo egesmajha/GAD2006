@@ -46,16 +46,16 @@ void AGameManager::CreateLevelActors(FSLevelInfo Info)
 	}
 }
 
-bool AGameManager::UndoLastMove()
+bool AGameManager::UnDoLastMove()
 {
 	if(CommandPool.Num() == 0)
 	{
 		return false;
 	}
-
 	TSharedRef<Command> LastCommand = CommandPool.Pop();
+
 	LastCommand->Revert();
-	return true;
+	return true ;
 }
 
 
@@ -87,9 +87,11 @@ void AGameManager::OnActorClicked(AActor* Actor, FKey button)
 
 	if (Slot->Unit == nullptr)
 	{
-		TSharedRef<MoveCommand> Cmd = 
+		TSharedRef<MoveCommand> Cmd =
 			MakeShared<MoveCommand>(ThePlayer->Slot->GridPosition, Slot->GridPosition);
 		Cmd->Execute();
+		// store executed command in the pool so it can be undone later
+		CommandPool.Add(Cmd);
 		CurrentCommand = Cmd;
 	}
 }
