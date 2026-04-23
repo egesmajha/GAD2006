@@ -26,7 +26,7 @@ AGameSlot::AGameSlot()
 		Plane->SetStaticMesh(DefaultSlotMesh.Object);
 		Plane->SetupAttachment(RootComponent);
 	
-
+		SetState(GS_Default);
 }
 
 void AGameSlot::SetState(EGridState NewState)
