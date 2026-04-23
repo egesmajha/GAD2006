@@ -46,6 +46,18 @@ void AGameManager::CreateLevelActors(FSLevelInfo Info)
 	}
 }
 
+bool AGameManager::UndoLastMove()
+{
+	if(CommandPool.Num() == 0)
+	{
+		return false;
+	}
+
+	TSharedRef<Command> LastCommand = CommandPool.Pop();
+	LastCommand->Revert();
+	return true;
+}
+
 
 // Called every frame
 void AGameManager::Tick(float DeltaTime)
