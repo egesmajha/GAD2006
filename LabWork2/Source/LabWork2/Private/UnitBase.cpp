@@ -26,6 +26,7 @@ void AUnitBase::AssignToSlot(AGameSlot* NewSlot)
 
 
 
+
 // Called when the game starts or when spawned
 void AUnitBase::BeginPlay()
 {
