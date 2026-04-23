@@ -3,8 +3,8 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "GameFramework/Actor.h"
 #include "GameSlot.h"
+#include "GameFramework/Actor.h"
 #include "GameGrid.generated.h"
 
 UCLASS()

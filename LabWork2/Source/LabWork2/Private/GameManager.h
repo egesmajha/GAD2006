@@ -42,7 +42,7 @@ public:
 
 	void OnActorClicked(AActor* Actor, FKey button);
 
-	void CreateLevelActors(FSLevelInfo LevelInfo);
+	void CreateLevelActors(FSLevelInfo Info);
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
 	int CurrentLevel;
@@ -52,6 +52,9 @@ public:
 
 	UPROPERTY(EditAnywhere)
 	AGameGrid* GameGrid;
+
+private:
+	AUnitBase* ThePlayer;
 
 protected:
 	// Called when the game starts or when spawned

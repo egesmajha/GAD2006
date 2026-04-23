@@ -2,6 +2,7 @@
 
 
 #include "GameManager.h"
+#include "TBPlayerController.h"
 
 // Sets default values
 AGameManager::AGameManager()
@@ -15,8 +16,35 @@ AGameManager::AGameManager()
 void AGameManager::BeginPlay()
 {
 	Super::BeginPlay();
+
+	if(auto PlayerController = GetWorld()->GetFirstPlayerController<ATBPlayerController>())
+	{
+		PlayerController->GameManager = this;
+	}
+	if(Levels.IsValidIndex(CurrentLevel))
+	{
+		CreateLevelActors(Levels[CurrentLevel]);
+	}
 	
 }
+
+void AGameManager::CreateLevelActors(FSLevelInfo Info)
+{
+	ThePlayer = nullptr;
+
+	for (auto UnitInfo : Info.Units)
+	{
+		if (AGameSlot* Slot = GameGrid->GetSlot(UnitInfo.StartPosition))
+		{
+			Slot->SpawnUnitHere(UnitInfo.UnitClass);
+			if (Slot->Unit && Slot->Unit->IsControlledByThePlayer())
+			{
+				ThePlayer = Slot->Unit;
+			}
+		}
+	}
+}
+
 
 // Called every frame
 void AGameManager::Tick(float DeltaTime)

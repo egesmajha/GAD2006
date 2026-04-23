@@ -2,6 +2,10 @@
 
 
 #include "GameSlot.h"
+#include "TBPlayerController.h"
+#include "UnitBase.h"
+#include "GameManager.h"
+
 
 // Sets default values
 AGameSlot::AGameSlot()
@@ -66,10 +70,20 @@ void AGameSlot::SpawnUnitHere(TSubclassOf<AUnitBase> UnitClass)
 	}
 }
 
+void AGameSlot::OnGridClicked(AActor* ThouchedActor, FKey ButtonPress)
+{
+	if(auto PlayerController = GetWorld()->GetFirstPlayerController<ATBPlayerController>())
+	{
+		PlayerController->OnActorClicked(this, ButtonPress);
+	}
+}
+
 // Called when the game starts or when spawned
 void AGameSlot::BeginPlay()
 {
 	Super::BeginPlay();
+
+	OnClicked.AddUniqueDynamic(this, &AGameSlot::OnGridClicked);
 	
 }
 
