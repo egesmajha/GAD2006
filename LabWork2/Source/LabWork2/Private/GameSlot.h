@@ -14,7 +14,7 @@ struct FSGridPosition
 
 	GENERATED_USTRUCT_BODY()
 
-	FSGridPosition(){}
+	FSGridPosition() {}
 	FSGridPosition(int col, int row) : Col(col), Row(row) {}
 
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
@@ -22,7 +22,7 @@ struct FSGridPosition
 
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 	uint8 Row;
-}
+};
 
 UENUM(Blueprintable)
 enum EGridState
