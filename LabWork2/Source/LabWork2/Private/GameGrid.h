@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "GameSlot.h"
 #include "GameGrid.generated.h"
 
 UCLASS()
@@ -14,6 +15,19 @@ class AGameGrid : public AActor
 public:	
 	// Sets default values for this actor's properties
 	AGameGrid();
+	virtual void OnConstruction(const FTransform& Transform) override;
+
+	UPROPERTY(EditAnywhere)
+	TSubclassOf<AGameSlot> GridClass;
+	 
+	UPROPERTY(EditAnywhere)
+	int NumRows;
+
+	UPROPERTY(EditAnywhere)
+	int NumCols;
+
+	UPROPERTY(VisibleAnywhere)
+	TArray<UChildActorComponent*> GridSlots;
 
 protected:
 	// Called when the game starts or when spawned
