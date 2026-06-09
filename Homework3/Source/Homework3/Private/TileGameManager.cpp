@@ -70,11 +70,12 @@ void ATileGameManager::OnActorInteraction(AActor* Actor, FVector Location, bool 
 	{
 		ATileBase* SelectedTile = TileTypes[CurrentTileIndex];
 
-		if (SelectedTile && SelectedTile->BaseMesh)
+		if (SelectedTile && SelectedTile->BaseMesh && SelectedTile->InstancedMesh)
 		{
 			CurrentTileDisplay->SetStaticMesh(SelectedTile->BaseMesh);
 			CurrentTileDisplay->SetWorldLocation(GridLoc);
 			CurrentTileDisplay->SetWorldRotation(FRotator(0.0f, CurrentTileYaw, 0.0f));
+			CurrentTileDisplay->SetWorldScale3D(SelectedTile->InstancedMesh->GetComponentScale());
 		}
 	}
 
@@ -111,7 +112,6 @@ void ATileGameManager::OnActorInteraction(AActor* Actor, FVector Location, bool 
 				SelectedTile->InstancedMesh->GetRelativeTransform() * TileTransform,
 				true
 			);
-			
 		}
 
 		UE_LOG(LogTemp, Warning, TEXT("Hit: %s - %f,%f,%f"),
