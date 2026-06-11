@@ -97,3 +97,15 @@ LabWork2/Content/Collections/
 LabWork2/Content/Developers/
 
 
+# =========================================================
+# Homework3 specific
+# Buraya Homework3'te istemediklerini yaz
+# =========================================================
+Homework3/Content/Collections/
+Homework3/Content/Developers/
+Homework3/Content/__ExternalActors__/
+Homework3/Content/__ExternalObjects__/
+Homework3/Saved/
+Homework3/Intermediate/
+Homework3/Binaries/
+Homework3/DerivedDataCache/
