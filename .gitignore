@@ -109,3 +109,16 @@ Homework3/Saved/
 Homework3/Intermediate/
 Homework3/Binaries/
 Homework3/DerivedDataCache/
+
+# =========================================================
+# Homework4 specific
+# Buraya Homework4'te istemediklerini yaz
+# =========================================================
+Homework4/Content/Collections/
+Homework4/Content/Developers/
+Homework4/Content/__ExternalActors__/
+Homework4/Content/__ExternalObjects__/
+Homework4/Saved/
+Homework4/Intermediate/
+Homework4/Binaries/
+Homework4/DerivedDataCache/
